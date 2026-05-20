@@ -83,6 +83,7 @@ strong{font-weight: bold;}
     text-align: right;
     button{
       padding:4px;
+      font-size: 12px;
       border:1px solid #5f5f5f;
       &+button{
         margin-left: 10px;
@@ -102,7 +103,7 @@ strong{font-weight: bold;}
 .subtitles-list {
   flex-grow: 1;        /* 유튜브를 제외한 나머지 화면 높이를 전부 차지 */
   overflow-y: auto;    /* 내용이 많아지면 세로 스크롤바가 자동으로 생성됨 */
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .lyrics-block{
