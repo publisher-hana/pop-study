@@ -997,6 +997,25 @@ export const lessons = [
     { "start": "3:13", "end": "3:16", "en": "Gotta be alright, 'cause baby", "ko": "모두 다 괜찮을 거예요, 왜냐하면 그대여" },
     { "start": "3:16", "end": "3:21", "en": "Love never felt so good", "ko": "사랑이 이토록 좋았던 적이 없었으니까요" }
   ]
+},{
+  "id": 29,
+  "title": "2년만에 MTV 복귀무대 #michaeljackson",
+  "category": "popsong",
+  "artist": "Michael Jackson",
+  "videoId": "NCduRDu4CeM",
+  "segments": [
+    { "start": "0:01", "end": "0:07", "en": "Don't stop 'til you get enough", "ko": "만족할 때까지 멈추지 마" },
+    { "start": "0:07", "end": "0:13", "en": "You know, 'cause the force, it's got a lot of power in it", "ko": "왜냐하면 그 강력한 이끌림은 엄청난 힘을 품고 있거든" },
+    { "start": "0:13", "end": "0:21", "en": "It make me feel like, it make me feel like... woo!", "ko": "그건 내 기분을 마치, 나를 마치... 우!" },
+    { "start": "0:21", "end": "0:25", "en": "The way you make me feel", "ko": "날 느끼게 하는 너의 방식" },
+    { "start": "0:25", "end": "0:30", "en": "You really turn me on", "ko": "넌 날 정말 기분 좋게 해" },
+    { "start": "0:30", "end": "0:33", "en": "You knock me off of my feet", "ko": "그리고 넌 날 흥분시켜" },
+    { "start": "0:33", "end": "0:38", "en": "My lonely days are gone", "ko": "내 외로운 나날들은 다 사라졌지" },
+    { "start": "0:40", "end": "0:42", "en": "I'm tired of injustice", "ko": "난 이 부당함에 지쳤어" },
+    { "start": "0:42", "end": "0:44", "en": "I'm tired of the schemes", "ko": "이 음모에도 지쳤고" },
+    { "start": "0:44", "end": "0:46", "en": "The lies are disgusting", "ko": "역겨운 거짓말들" },
+    { "start": "0:46", "end": "0:51", "en": "So what does it mean, damn it?", "ko": "젠장, 도대체 그게 무슨 소리야?" }
+  ]
 }
   
 
