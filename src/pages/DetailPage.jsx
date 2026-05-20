@@ -88,11 +88,11 @@ function DetailPage() {
 
       {/* 유튜브 비디오 플레이어 배치 */}
       <div className="video-container" style={{ marginBottom: '20px' }}>
-        {/* <YouTube 
+        <YouTube 
           videoId={lesson.videoId} 
           opts={opts} 
           onReady={onPlayerReady} 
-        /> */}
+        />
       </div>
       <div className="subtitles-list">
         {lesson.segments.map((segment, index) => (

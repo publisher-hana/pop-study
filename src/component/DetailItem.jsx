@@ -6,11 +6,11 @@ export default function DetailItem({ value, link }) {
   return (
     <li>
       <Link to={link}>
-        {/* <img 
+        {<img 
           src={thumbnail} 
           alt={`${value.title} thumbnail`} 
           className="img-thum"
-        /> */}
+        />}
         <h2 className="title">{value.title}</h2> <span>{value.artist && `- ${value.artist}`}</span>
         <div className="desc">{value.desc}</div>
       </Link>
