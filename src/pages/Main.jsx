@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { lessons } from "../data/data";
 import DetailItem from "../component/DetailItem";
 

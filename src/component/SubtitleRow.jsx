@@ -1,15 +1,25 @@
 import React from 'react';
+import { TfiLoop } from "react-icons/tfi";
 
-function SubtitleRow({ segment, index, loopRange, onSubtitleClick, onLoopClick }) {
+function SubtitleRow({ segment, index, loopRange, onSubtitleClick, onLoopClick, showEng, showKor }) {
     const isLooping = loopRange && loopRange.index === index;
     return (
-         <div key={index} className="lyrics-block" style={{ marginBottom: '15px' }}>
-            <button className='eng' style={{ fontWeight: 'bold'}} 
-                onClick={() => handleSubtitleClick(segment.start)}
-            >{segment.en}</button>
-            <button className=''></button>
-            <p className='kor' style={{ color: '#666'}}>{segment.ko}</p>
-            <button onClick={() => onLoopClick(segment, index)}>{isLooping ? '반복 중' : '구간 반복'}</button>
+         <div key={index} className="lyrics-block" style={{ marginBottom: '15px', backgroundColor: isLooping ? '#eee' : 'transparent',}}>
+            <div className='subtile'>
+              {showEng && (
+              <button className='eng' style={{ fontWeight: 'bold'}} 
+                  onClick={() => onSubtitleClick(segment.start)}
+              >
+                {segment.en}
+              </button>
+            )}
+              {showKor && (
+              <p className='kor' style={{ color: '#666', margin: '5px 0' }}>
+                {segment.ko}
+              </p>
+            )}
+            </div>
+            <button className={`loop-btn ${isLooping ? 'active' : ''}`} onClick={() => onLoopClick(segment, index)}><TfiLoop size={28} /></button>
         </div>
     );
 }

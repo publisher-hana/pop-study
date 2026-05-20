@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect} from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { lessons } from "../data/data";
 import SubtitleRow from '../component/SubtitleRow';
 import YouTube from 'react-youtube';
@@ -14,6 +14,9 @@ function DetailPage() {
   // 2. 유튜브 플레이어 객체를 담아둘 변수(ref)
   const playerRef = useRef(null);
   const [loopRange, setLoopRange] = useState(null);
+  const [showEng, setShowEng] = useState(true);
+  const [showKor, setShowKor] = useState(true);
+
   // "1:37" 같은 문자열 시간을 초(숫자)로 바꿔주는 함수
   const timeToSeconds = (timeStr) => {
     const [minutes, seconds] = timeStr.split(':').map(Number);
@@ -70,8 +73,6 @@ function DetailPage() {
 
   // 유튜브 플레이어 설정 옵션
   const opts = {
-    height: '390',
-    width: '640',
     playerVars: {
       autoplay: 0, // 자동재생 끔
     },
@@ -84,15 +85,27 @@ function DetailPage() {
 
   return (
     <div className="lesson-card">
-      {/* <h2>{lesson.title} ({lesson.artist})</h2> */}
+       <div className='link-back'>
+        <Link to="/">← 목록으로</Link>
+      </div>
+
 
       {/* 유튜브 비디오 플레이어 배치 */}
-      <div className="video-container" style={{ marginBottom: '20px' }}>
+      <div className="video-container">
         <YouTube 
           videoId={lesson.videoId} 
           opts={opts} 
           onReady={onPlayerReady} 
+          className='player'
         />
+      </div>
+      <div className='control'>
+        <button onClick={() => setShowEng(!showEng)}>
+          {showEng ? '영어 숨기기' : '영어 보이기'}
+        </button>
+        <button onClick={() => setShowKor(!showKor)}>
+          {showKor ? '한글 숨기기' : '한글 보이기'}
+        </button>
       </div>
       <div className="subtitles-list">
         {lesson.segments.map((segment, index) => (
@@ -103,6 +116,8 @@ function DetailPage() {
             loopRange={loopRange}
             onSubtitleClick={handleSubtitleClick}
             onLoopClick={handleLoopClick}
+            showEng={showEng}
+            showKor={showKor}
           />
         ))}
       </div>
