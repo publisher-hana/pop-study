@@ -43,9 +43,6 @@ strong{font-weight: bold;}
   grid-template-columns: repeat(3, 1fr);
   gap:20px;
   row-gap:80px;
-  li{
-    margin-bottom: 3rem;
-  }
   li a{
     display: block;
     font-size: 18px;
@@ -129,7 +126,7 @@ strong{font-weight: bold;}
   .lesson-list{
     grid-template-columns: repeat(2, 1fr);
     gap:10px;
-    row-gap:80px;
+    row-gap:30px;
     & li a .title{
       font-size:1.8rem
     }
