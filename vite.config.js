@@ -1,8 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-// https://vite.dev/config/
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 export default defineConfig({
+  base: "/pop-study/", 
   plugins: [react()],
-  base: '/pop-study/'
-})
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'), // 👈 @ 경로 설정 복구
+    },
+  },
+});
