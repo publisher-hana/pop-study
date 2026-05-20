@@ -1016,6 +1016,41 @@ export const lessons = [
     { "start": "0:44", "end": "0:46", "en": "The lies are disgusting", "ko": "역겨운 거짓말들" },
     { "start": "0:46", "end": "0:51", "en": "So what does it mean, damn it?", "ko": "젠장, 도대체 그게 무슨 소리야?" }
   ]
+},
+{
+  "id": 30,
+  "title": "The Way You Make Me Feel (Live in Tokyo, 1992 - Open Mic)",
+  "category": "popsong",
+  "artist": "Michael Jackson",
+  "videoId": "de-G_qpT9IQ",
+  "segments": [
+    { "start": "0:44", "end": "0:48", "en": "Hey, pretty baby with the high heels on", "ko": "이봐요, 하이힐을 신은 예쁜 그대" },
+    { "start": "0:48", "end": "0:53", "en": "You give me fever like I've never, ever known", "ko": "당신은 내가 여태껏 알지 못했던 뜨거운 열정을 주네요" },
+    { "start": "0:53", "end": "0:57", "en": "You're just a product of loveliness", "ko": "당신은 그저 사랑스러움 그 자체예요" },
+    { "start": "0:57", "end": "1:01", "en": "I like the groove of your walk, your talk, your dress", "ko": "당신의 걸음걸이, 말투, 옷차림의 그 느낌이 너무 좋아요" },
+    { "start": "1:01", "end": "1:05", "en": "I feel your fever from miles around", "ko": "수 마일 떨어진 곳에서도 당신의 열기가 느껴져요" },
+    { "start": "1:05", "end": "1:09", "en": "I'll pick you up in my car and we'll paint the town", "ko": "내 차로 당신을 데리러 갈게요, 우리 함께 즐겁게 놀아봐요" },
+    { "start": "1:09", "end": "1:13", "en": "Just kiss me, baby, and tell me twice", "ko": "그저 내게 입맞춤해 줘요, 그리고 두 번 말해줘요" },
+    { "start": "1:13", "end": "1:17", "en": "That you're the one for me", "ko": "당신이 바로 나의 운명이라는 걸" },
+    { "start": "1:17", "end": "1:22", "en": "The way you make me feel", "ko": "날 느끼게 하는 너의 방식" },
+    { "start": "1:22", "end": "1:26", "en": "You really turn me on", "ko": "넌 날 정말 기분 좋게 해" },
+    { "start": "1:26", "end": "1:30", "en": "You knock me off of my feet", "ko": "그리고 넌 날 완전히 사로잡았지" },
+    { "start": "1:30", "end": "1:36", "en": "My lonely days are gone", "ko": "내 외로운 나날들은 이제 다 사라졌어" },
+    { "start": "2:10", "end": "2:14", "en": "I like the feeling you're giving me", "ko": "당신이 내게 주는 이 기분이 정말 좋아요" },
+    { "start": "2:14", "end": "2:18", "en": "Just hold me, baby, and I'm in ecstasy", "ko": "그저 날 안아줘요, 난 황홀경에 빠져들 테니" },
+    { "start": "2:18", "end": "2:22", "en": "Oh, I'll be working from nine to five", "ko": "오, 난 아침 9시부터 저녁 5시까지 열심히 일할 거예요" },
+    { "start": "2:22", "end": "2:26", "en": "To buy you things to keep you by my side", "ko": "당신을 내 곁에 두기 위해 좋은 것들을 사주려고 말이죠" },
+    { "start": "2:26", "end": "2:30", "en": "Just kiss me, baby, and tell me twice", "ko": "그저 내게 입맞춤해 줘요, 그리고 두 번 말해줘요" },
+    { "start": "2:30", "end": "2:35", "en": "That you're the one for me", "ko": "당신이 바로 나의 운명이라는 걸" },
+    { "start": "2:35", "end": "2:39", "en": "The way you make me feel", "ko": "날 느끼게 하는 너의 방식" },
+    { "start": "2:39", "end": "2:43", "en": "You really turn me on", "ko": "넌 날 정말 기분 좋게 해" },
+    { "start": "2:43", "end": "2:46", "en": "You knock me off of my feet", "ko": "그리고 넌 날 완전히 사로잡았지" },
+    { "start": "2:46", "end": "2:52", "en": "My lonely days are gone", "ko": "내 외로운 나날들은 이제 다 사라졌어" },
+    { "start": "3:35", "end": "3:40", "en": "The way you make me feel", "ko": "날 느끼게 하는 너의 방식" },
+    { "start": "3:40", "end": "3:43", "en": "You really turn me on", "ko": "넌 날 정말 기분 좋게 해" },
+    { "start": "3:43", "end": "3:47", "en": "You knock me off of my feet", "ko": "그리고 넌 날 완전히 사로잡았지" },
+    { "start": "3:47", "end": "3:51", "en": "My lonely days are gone", "ko": "내 외로운 나날들은 이제 다 사라졌어" }
+  ]
 }
   
 
