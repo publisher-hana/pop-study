@@ -362,7 +362,7 @@ export const lessons = [
     { "start": "3:05", "end": "3:10", "en": "Billie Jean is not my lover", "ko": "빌리 진은 내 연인이 아니야" },
     { "start": "3:10", "end": "3:14", "en": "She's just a girl who claims that I am the one", "ko": "그녀는 그저 내가 그 사람이라고 주장하는 소녀일 뿐이야" },
     { "start": "3:14", "end": "3:18", "en": "But the kid is not my son", "ko": "하지만 그 아이는 내 아들이 아니야" },
-    { "start": "3:18", "end": "3:22", "en": "She says I am the one, but the kid is not my son", "ko": "그녀는 내가 맞다고 하지만, 그 아이는 내 아들이 아니야" }
+    { "start": "3:18", "end": "3:22", "en": "She says I am the one, but the kid is not my son", "ko": "그녀는 내가 맞다고 하지만, 그 아이는 내 아들이 아니야" },
     { "start": "3:39", "end": "3:43", "en": "For forty days and forty nights, the law was on her side", "ko": "40일 밤낮 동안 법은 그녀의 편에 서 있었지" },
     { "start": "3:43", "end": "3:47", "en": "But who can stand when she's in demand, her schemes and plans", "ko": "하지만 그녀가 요구하고 음모와 계획을 꾸밀 때 누가 버텨내겠어" },
     { "start": "3:47", "end": "3:52", "en": "'Cause we danced on the floor in the round", "ko": "우린 그저 무대 위에서 함께 춤을 추었을 뿐인데" },
