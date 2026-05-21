@@ -118,6 +118,14 @@ strong{font-weight: bold;}
       height: 360px; 
     }
   }
+  .subtitle-row-wrapper.active-highlight,
+  .lyrics-block.active-highlight{
+    background-color: #e3f2fd; /* 은은하고 시원한 연파란색 하이라이트 배경색 */
+    border-left: 2px solid #2196f3; /* 왼쪽 라인에 포인트 포커스 바를 추가 */
+    .subtile{
+      padding-left:2px;
+    }
+  }
 
 @media (max-width: 768px) {
   html,body{

@@ -4,7 +4,7 @@ import { TfiLoop } from "react-icons/tfi";
 function SubtitleRow({ segment, index, loopRange, onSubtitleClick, onLoopClick, showEng, showKor }) {
     const isLooping = loopRange && loopRange.index === index;
     return (
-         <div key={index} className="lyrics-block" style={{ marginBottom: '15px', backgroundColor: isLooping ? '#eee' : 'transparent',}}>
+         <div key={index} className={`lyrics-block  ${isLooping ? 'active-highlight' : ''}`} style={{ marginBottom: '15px'}}>
             <div className='subtile'>
               {showEng && (
               <button className='eng' style={{ fontWeight: 'bold'}} 
