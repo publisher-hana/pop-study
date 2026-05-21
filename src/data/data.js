@@ -1041,6 +1041,8 @@ export const lessons = [
     { "start": "0:57", "end": "1:01", "en": "You really turn me on", "ko": "넌 날 정말 기분 좋게 해" },
     { "start": "1:01", "end": "1:05", "en": "You knock me off of my feet", "ko": "그리고 넌 날 완전히 사로잡았지" },
     { "start": "1:05", "end": "1:12", "en": "My lonely days are gone", "ko": "내 외로운 나날들은 이제 다 사라졌어" },
+    { "start": "1:12", "end": "1:16", "en": "I'm tired of injustice, I'm tired of the schemes", "ko": "난 이 부당함에 지쳤고, 이 음모에 지쳤어" },
+    { "start": "1:16", "end": "1:21", "en": "The lies are disgusting, so what does it mean, damn it?", "ko": "역겨운 거짓말들, 젠장 도대체 그게 무슨 소리야?" },
     { "start": "3:51", "end": "3:56", "en": "She says I am the one, but the kid is not my son", "ko": "그녀는 내가 맞다고 하지만, 그 아이는 내 아들이 아니야" },
     { "start": "5:58", "end": "6:05", "en": "Some of us like to play it safe and take each day as it comes", "ko": "우리 중 어떤 이들은 안전하게 행동하며 매일 주어지는 대로 살아가는 걸 좋아하죠" },
     { "start": "6:05", "end": "6:10", "en": "Some of us like to take that crazy walk on the wild side", "ko": "또 어떤 이들은 저 거친 세상을 향해 미친 듯이 발을 내딛는 걸 좋아해요" },
