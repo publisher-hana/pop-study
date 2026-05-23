@@ -138,13 +138,19 @@ function DetailPage() {
           className='player'
         />
       </div>
-      <div className='control'>
-        <button onClick={() => setShowEng(!showEng)}>
-          {showEng ? '영어 숨기기' : '영어 보이기'}
-        </button>
-        <button onClick={() => setShowKor(!showKor)}>
-          {showKor ? '한글 숨기기' : '한글 보이기'}
-        </button>
+      <div className="info-container">
+        <div className='info-area'>
+          <h2 className="title">{lesson.title}</h2> 
+          {lesson.artist && <span className="artist">- {lesson.artist}</span>}
+        </div>
+        <div className='control'>
+          <button onClick={() => setShowEng(!showEng)}>
+            {showEng ? '영어 숨기기' : '영어 보이기'}
+          </button>
+          <button onClick={() => setShowKor(!showKor)}>
+            {showKor ? '한글 숨기기' : '한글 보이기'}
+          </button>
+        </div>
       </div>
      <div className="subtitles-list">
         {lesson.segments.map((segment, index) => {
