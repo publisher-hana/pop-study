@@ -8,14 +8,14 @@ function SubtitleRow({ segment, index, loopRange, onSubtitleClick, onLoopClick, 
             <div className='subtile'>
               {showEng && (
               <button className='eng' style={{ fontWeight: 'bold'}} 
-                  onClick={() => onSubtitleClick(segment.start)}
+                  onClick={() => onSubtitleClick(segment.start_time)}
               >
-                {segment.en}
+                {segment.en_text}
               </button>
             )}
               {showKor && (
               <p className='kor' style={{ color: '#666', margin: '5px 0' }}>
-                {segment.ko}
+                {segment.ko_text}
               </p>
             )}
             </div>

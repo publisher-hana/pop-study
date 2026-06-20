@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function DetailItem({ value, link }) {
   // value: { id, title, artist, videoId, segments, ... }
-  const thumbnail = `https://img.youtube.com/vi/${value.videoId}/hqdefault.jpg`; 
+  const thumbnail = `https://img.youtube.com/vi/${value.video_id}/hqdefault.jpg`; 
   return (
     <li>
       <Link to={link}>

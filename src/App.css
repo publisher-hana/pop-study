@@ -104,6 +104,13 @@ strong{font-weight: bold;}
 
 .lyrics-block{
   display: flex; justify-content: space-between;
+  .subtile{
+    flex:1;
+    button{
+      display:block;
+      width:100%;
+    }
+  }
    .subtile .eng{
       text-align:left
   }

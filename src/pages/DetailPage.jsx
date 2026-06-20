@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect} from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { lessons } from "../data/data";
+//import { lessons } from "../data/data";
+import { supabase } from '../supabaseClient';
 import SubtitleRow from '../component/SubtitleRow';
 import YouTube from 'react-youtube';
 
@@ -9,7 +10,9 @@ function DetailPage() {
   const { id } = useParams();
 
   //lessons 배열에서 주소창의 id와 일치하는 '단 하나의 레슨'만 찾습니다.
-  const lesson = lessons.find((item) => item.id === Number(id));
+  //const lesson = lessons.find((item) => item.id === Number(id));
+  const [lesson, setLesson] = useState(null); // lesson을 상태로 관리
+  const [loading, setLoading] = useState(true); // 로딩 상태 추가
 
   // 2. 유튜브 플레이어 객체를 담아둘 변수(ref)
   const playerRef = useRef(null);
@@ -26,6 +29,24 @@ function DetailPage() {
     const [minutes, seconds] = timeStr.split(':').map(Number);
     return minutes * 60 + seconds;
   };
+
+  // 1. [새로 추가] DB 데이터 로딩 로직
+  useEffect(() => {
+    const fetchLesson = async () => {
+      setLoading(true);
+      const { data, error } = await supabase
+        .from('song')
+        .select(`*, segments:segment(*)`)
+        .eq('id', id)
+        .single();
+
+      if (error) console.error('데이터 조회 실패:', error);
+      else setLesson(data);
+      
+      setLoading(false);
+    };
+    fetchLesson();
+  }, [id]);
 
   useEffect(() => {
     let intervalId;
@@ -47,6 +68,7 @@ function DetailPage() {
           }
         }
       }, 200);
+      
     }
 
     return () => {
@@ -60,8 +82,8 @@ function DetailPage() {
 
     // 현재 비디오 타임라인에 들어오는 단 한 줄의 자막 인덱스를 서칭
     const index = lesson.segments.findIndex((segment) => {
-      const startSec = timeToSeconds(segment.start);
-      const endSec = timeToSeconds(segment.end);
+      const startSec = timeToSeconds(segment.start_time);
+      const endSec = timeToSeconds(segment.end_time);
       return currentTime >= startSec && currentTime <= endSec;
     });
 
@@ -96,8 +118,8 @@ function DetailPage() {
   };
 
   const handleLoopClick = (segment, index) => {
-    const startSec = timeToSeconds(segment.start);
-    const endSec = timeToSeconds(segment.end);
+    const startSec = timeToSeconds(segment.start_time);
+    const endSec = timeToSeconds(segment.end_time);
 
     if (loopRange && loopRange.index === index) {
       setLoopRange(null);
@@ -122,6 +144,11 @@ function DetailPage() {
     playerRef.current = event.target;
   };
 
+  if (loading) return <div>로딩 중...</div>;
+  
+  // 2. [데이터 없음 처리] 없는 페이지 요청 시 안내 문구
+  if (!lesson) return <div>해당 레슨을 찾을 수 없습니다.</div>;
+
   return (
     <div className="lesson-card">
        <div className='link-back'>
@@ -132,7 +159,7 @@ function DetailPage() {
       {/* 유튜브 비디오 플레이어 배치 */}
       <div className="video-container">
         <YouTube 
-          videoId={lesson.videoId} 
+          videoId={lesson.video_id} 
           opts={opts} 
           onReady={onPlayerReady} 
           className='player'
